@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9A62EE352B9C27E300C834F0 /* WebRTC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE342B9C27E300C834F0 /* WebRTC_iOSApp.swift */; };
-		9A62EE372B9C27E300C834F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE362B9C27E300C834F0 /* ContentView.swift */; };
 		9A62EE392B9C27E500C834F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A62EE382B9C27E500C834F0 /* Assets.xcassets */; };
 		9A62EE3D2B9C27E500C834F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A62EE3C2B9C27E500C834F0 /* Preview Assets.xcassets */; };
 		9A62EE452B9C2A6000C834F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE442B9C2A6000C834F0 /* MainView.swift */; };
 		9A62EE492B9C3F9E00C834F0 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE482B9C3F9E00C834F0 /* VideoView.swift */; };
+		9A62EE4C2B9C4C7B00C834F0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE4B2B9C4C7B00C834F0 /* MainViewModel.swift */; };
+		9A62EE4E2B9C4CFE00C834F0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE4D2B9C4CFE00C834F0 /* Config.swift */; };
+		9A62EE512B9C5C8F00C834F0 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE502B9C5C8F00C834F0 /* Header.swift */; };
+		9A62EE532B9C5CBC00C834F0 /* StatusRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE522B9C5CBC00C834F0 /* StatusRowView.swift */; };
+		9A62EE552B9C5D0800C834F0 /* StatusRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE542B9C5D0800C834F0 /* StatusRowType.swift */; };
+		9A62EE5A2B9C5DDB00C834F0 /* WebRTCStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE592B9C5DDB00C834F0 /* WebRTCStatusView.swift */; };
+		9A62EE5C2B9C5EC500C834F0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE5B2B9C5EC500C834F0 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A62EE312B9C27E300C834F0 /* WebRTC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebRTC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A62EE342B9C27E300C834F0 /* WebRTC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTC_iOSApp.swift; sourceTree = "<group>"; };
-		9A62EE362B9C27E300C834F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A62EE382B9C27E500C834F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A62EE3A2B9C27E500C834F0 /* WebRTC_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebRTC_iOS.entitlements; sourceTree = "<group>"; };
 		9A62EE3C2B9C27E500C834F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A62EE442B9C2A6000C834F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9A62EE482B9C3F9E00C834F0 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		9A62EE4B2B9C4C7B00C834F0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9A62EE4D2B9C4CFE00C834F0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9A62EE502B9C5C8F00C834F0 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		9A62EE522B9C5CBC00C834F0 /* StatusRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRowView.swift; sourceTree = "<group>"; };
+		9A62EE542B9C5D0800C834F0 /* StatusRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRowType.swift; sourceTree = "<group>"; };
+		9A62EE592B9C5DDB00C834F0 /* WebRTCStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCStatusView.swift; sourceTree = "<group>"; };
+		9A62EE5B2B9C5EC500C834F0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,10 @@
 		9A62EE332B9C27E300C834F0 /* WebRTC-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9A62EE432B9C2A3500C834F0 /* View */,
+				9A62EE4A2B9C4C6700C834F0 /* ViewModels */,
+				9A62EE432B9C2A3500C834F0 /* Views */,
 				9A62EE342B9C27E300C834F0 /* WebRTC_iOSApp.swift */,
-				9A62EE362B9C27E300C834F0 /* ContentView.swift */,
+				9A62EE4D2B9C4CFE00C834F0 /* Config.swift */,
 				9A62EE382B9C27E500C834F0 /* Assets.xcassets */,
 				9A62EE3A2B9C27E500C834F0 /* WebRTC_iOS.entitlements */,
 				9A62EE3B2B9C27E500C834F0 /* Preview Content */,
@@ -74,13 +87,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9A62EE432B9C2A3500C834F0 /* View */ = {
+		9A62EE432B9C2A3500C834F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A62EE442B9C2A6000C834F0 /* MainView.swift */,
+				9A62EE5D2B9C606900C834F0 /* Main */,
 				9A62EE482B9C3F9E00C834F0 /* VideoView.swift */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A62EE4A2B9C4C6700C834F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9A62EE4B2B9C4C7B00C834F0 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A62EE5D2B9C606900C834F0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A62EE5B2B9C5EC500C834F0 /* CustomButton.swift */,
+				9A62EE592B9C5DDB00C834F0 /* WebRTCStatusView.swift */,
+				9A62EE542B9C5D0800C834F0 /* StatusRowType.swift */,
+				9A62EE522B9C5CBC00C834F0 /* StatusRowView.swift */,
+				9A62EE502B9C5C8F00C834F0 /* Header.swift */,
+				9A62EE442B9C2A6000C834F0 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A62EE4C2B9C4C7B00C834F0 /* MainViewModel.swift in Sources */,
 				9A62EE492B9C3F9E00C834F0 /* VideoView.swift in Sources */,
-				9A62EE372B9C27E300C834F0 /* ContentView.swift in Sources */,
+				9A62EE512B9C5C8F00C834F0 /* Header.swift in Sources */,
 				9A62EE452B9C2A6000C834F0 /* MainView.swift in Sources */,
+				9A62EE552B9C5D0800C834F0 /* StatusRowType.swift in Sources */,
+				9A62EE532B9C5CBC00C834F0 /* StatusRowView.swift in Sources */,
 				9A62EE352B9C27E300C834F0 /* WebRTC_iOSApp.swift in Sources */,
+				9A62EE5C2B9C5EC500C834F0 /* CustomButton.swift in Sources */,
+				9A62EE5A2B9C5DDB00C834F0 /* WebRTCStatusView.swift in Sources */,
+				9A62EE4E2B9C4CFE00C834F0 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

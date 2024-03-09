@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct WebRTC_iOSApp: App {
+    let config = Config.default
+    
     var body: some Scene {
         WindowGroup {
             MainView()
