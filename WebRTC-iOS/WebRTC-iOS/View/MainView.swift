@@ -9,76 +9,76 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
-            Header()
-            
-            StatusRow(title: "Signaling status:", content: "{status}")
-            StatusRow(title: "Local SDP:", content: "{localSdp}")
-            StatusRow(title: "Local Candidates:", content: "{#candidates}")
-            StatusRow(title: "Remote SDP: ", content: "{remoteSdp}")
-            
-            Spacer()
-            
-            Text("WebRTC Status:")
-                .font(.title)
-                .bold()
-            Text("{WebRTC Status}")
-                .font(.title)
-                .bold()
-            
-            Spacer()
-            
-            HStack {
-                CustomButon(
-                    style: .textOnly,
-                    label: "Mute",
-                    action: { print("Mute button tapped") }
-                )
+        NavigationView {
+            VStack {
+                Header()
+                
+                StatusRow(title: "Signaling status:", content: "{status}")
+                StatusRow(title: "Local SDP:", content: "{localSdp}")
+                StatusRow(title: "Local Candidates:", content: "{#candidates}")
+                StatusRow(title: "Remote SDP: ", content: "{remoteSdp}")
                 
                 Spacer()
                 
-                CustomButon(
-                    style: .textOnly,
-                    label: "Send data",
-                    action: { print("Send data button tapped") }
-                )
-            }
-            
-            HStack {
-                CustomButon(
-                    style: .textOnly,
-                    label: "Speaker",
-                    action: { print("Speaker button tapped") }
-                )
+                Text("WebRTC Status:")
+                    .font(.title)
+                    .bold()
+                Text("{WebRTC Status}")
+                    .font(.title)
+                    .bold()
                 
                 Spacer()
                 
+                HStack {
+                    CustomButon(
+                        style: .textOnly,
+                        label: "Mute",
+                        action: { print("Mute button tapped") }
+                    )
+                    
+                    Spacer()
+                    
+                    CustomButon(
+                        style: .textOnly,
+                        label: "Send data",
+                        action: { print("Send data button tapped") }
+                    )
+                }
+                
+                HStack {
+                    CustomButon(
+                        style: .textOnly,
+                        label: "Speaker",
+                        action: { print("Speaker button tapped") }
+                    )
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: VideoView()) {
+                        Text("Video").foregroundColor(.blue)
+                    }
+                }
+                .padding(.top)
+                
                 CustomButon(
-                    style: .textOnly,
-                    label: "Video",
-                    action: { print("Video button tapped") }
+                    style: .blueBackground,
+                    label: "Send Offer",
+                    action: { print("Send offer button tapped") }
                 )
+                .padding(.top)
+                
+                CustomButon(
+                    style: .blueBackground,
+                    label: "Send Answer",
+                    action: { print("Send answer button tapped") }
+                )
+                .padding(.top)
+                
             }
-            .padding(.top)
-            
-            CustomButon(
-                style: .blueBackground,
-                label: "Send Offer",
-                action: { print("Send offer button tapped") }
-            )
-            .padding(.top)
-            
-            CustomButon(
-                style: .blueBackground,
-                label: "Send Answer",
-                action: { print("Send answer button tapped") }
-            )
-            .padding(.top)
-            
+            .padding(.horizontal, 20)
+            .padding(.bottom, 10)
+            .background(.white)
         }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 10)
-        .background(.white)
     }
 }
 

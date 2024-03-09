@@ -11,7 +11,7 @@ import SwiftUI
 struct WebRTC_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
