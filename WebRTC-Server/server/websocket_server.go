@@ -63,12 +63,6 @@ func (s *WebSocketServer) handleWebSocket(w http.ResponseWriter, r *http.Request
 			log.Println("Error reading message:", err)
 			return
 		}
-
-		//　For debugging
-		//log.Printf("Received message from client: %s\n", msg)
-		//confirmationMessage := []byte(fmt.Sprintf("Server received your message: %s", msg))
-		//conn.WriteMessage(websocket.BinaryMessage, confirmationMessage)
-
 		s.broadcast(msg, conn)
 	}
 }
