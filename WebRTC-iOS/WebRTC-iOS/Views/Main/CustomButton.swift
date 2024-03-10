@@ -30,10 +30,10 @@ struct CustomButton: View {
             Button(action: action) {
                 Text(label)
                     .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .cornerRadius(10)
+                    .background(Color.blue)
             }
-            .frame(maxWidth: .infinity, maxHeight: 50)
-            .cornerRadius(10)
-            .background(Color.blue)
         }
     }
 }

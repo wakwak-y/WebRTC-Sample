@@ -17,6 +17,7 @@ struct WebRTCStatusView: View {
                 .bold()
             Text(viewModel.webRTCStatusLabel)
                 .font(.title)
+                .foregroundColor(viewModel.webRTCStatusTextColor)
                 .bold()
         }
     }

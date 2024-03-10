@@ -12,6 +12,7 @@ enum StatusRowType {
     case localSDP(Bool)
     case localCandidates(Int)
     case remoteSDP(Bool)
+    case remoteCandidates(Int)
     
     func makeRow() -> StatusRowView {
         switch self {
@@ -23,6 +24,8 @@ enum StatusRowType {
             return StatusRowView(title: "Local Candidates:", content: Text("\(count)"))
         case .remoteSDP(let hasSDP):
             return StatusRowView(title: "Remote SDP:", content: hasSDP ? Text("✅").foregroundColor(.green) : Text("❌").foregroundColor(.red))
+        case .remoteCandidates(let count):
+            return StatusRowView(title: "Remote Candidates:", content: Text("\(count)"))
         }
     }
 }

@@ -19,6 +19,7 @@ struct MainView: View {
                 StatusRowType.localSDP(viewModel.hasLocalSdp).makeRow()
                 StatusRowType.localCandidates(viewModel.localCandidateCount).makeRow()
                 StatusRowType.remoteSDP(viewModel.hasRemoteSdp).makeRow()
+                StatusRowType.remoteCandidates(viewModel.localCandidateCount).makeRow()
                 
                 Spacer()
                 WebRTCStatusView(viewModel: viewModel)

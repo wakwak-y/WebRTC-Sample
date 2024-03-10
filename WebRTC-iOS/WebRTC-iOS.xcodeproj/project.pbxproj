@@ -19,6 +19,15 @@
 		9A62EE552B9C5D0800C834F0 /* StatusRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE542B9C5D0800C834F0 /* StatusRowType.swift */; };
 		9A62EE5A2B9C5DDB00C834F0 /* WebRTCStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE592B9C5DDB00C834F0 /* WebRTCStatusView.swift */; };
 		9A62EE5C2B9C5EC500C834F0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE5B2B9C5EC500C834F0 /* CustomButton.swift */; };
+		9A62EE632B9C644200C834F0 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE622B9C644200C834F0 /* WebRTCClient.swift */; };
+		9A62EE652B9C8D5400C834F0 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE642B9C8D5400C834F0 /* SignalingClient.swift */; };
+		9A62EE682B9C8E1600C834F0 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE672B9C8E1600C834F0 /* WebSocketProvider.swift */; };
+		9A62EE6C2B9C956B00C834F0 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 9A62EE6B2B9C956B00C834F0 /* WebRTC */; };
+		9A62EE6F2B9C958F00C834F0 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 9A62EE6E2B9C958F00C834F0 /* Starscream */; };
+		9A62EE712B9C99AE00C834F0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE702B9C99AE00C834F0 /* Message.swift */; };
+		9A62EE742B9C9A3000C834F0 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE732B9C9A3000C834F0 /* SessionDescription.swift */; };
+		9A62EE762B9C9E3400C834F0 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE752B9C9E3400C834F0 /* IceCandidate.swift */; };
+		9A62EE792B9D8E6F00C834F0 /* RTCStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE782B9D8E6E00C834F0 /* RTCStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,14 @@
 		9A62EE542B9C5D0800C834F0 /* StatusRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRowType.swift; sourceTree = "<group>"; };
 		9A62EE592B9C5DDB00C834F0 /* WebRTCStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCStatusView.swift; sourceTree = "<group>"; };
 		9A62EE5B2B9C5EC500C834F0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9A62EE622B9C644200C834F0 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		9A62EE642B9C8D5400C834F0 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		9A62EE672B9C8E1600C834F0 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		9A62EE702B9C99AE00C834F0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9A62EE732B9C9A3000C834F0 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		9A62EE752B9C9E3400C834F0 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		9A62EE772B9D82DA00C834F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9A62EE782B9D8E6E00C834F0 /* RTCStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A62EE6C2B9C956B00C834F0 /* WebRTC in Frameworks */,
+				9A62EE6F2B9C958F00C834F0 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +87,9 @@
 		9A62EE332B9C27E300C834F0 /* WebRTC-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9A62EE772B9D82DA00C834F0 /* Info.plist */,
+				9A62EE722B9C9A1300C834F0 /* Extensions */,
+				9A62EE612B9C642500C834F0 /* Services */,
 				9A62EE4A2B9C4C6700C834F0 /* ViewModels */,
 				9A62EE432B9C2A3500C834F0 /* Views */,
 				9A62EE342B9C27E300C834F0 /* WebRTC_iOSApp.swift */,
@@ -117,6 +139,27 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		9A62EE612B9C642500C834F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A62EE672B9C8E1600C834F0 /* WebSocketProvider.swift */,
+				9A62EE622B9C644200C834F0 /* WebRTCClient.swift */,
+				9A62EE642B9C8D5400C834F0 /* SignalingClient.swift */,
+				9A62EE702B9C99AE00C834F0 /* Message.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A62EE722B9C9A1300C834F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A62EE732B9C9A3000C834F0 /* SessionDescription.swift */,
+				9A62EE752B9C9E3400C834F0 /* IceCandidate.swift */,
+				9A62EE782B9D8E6E00C834F0 /* RTCStatus.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +176,10 @@
 			dependencies = (
 			);
 			name = "WebRTC-iOS";
+			packageProductDependencies = (
+				9A62EE6B2B9C956B00C834F0 /* WebRTC */,
+				9A62EE6E2B9C958F00C834F0 /* Starscream */,
+			);
 			productName = "WebRTC-iOS";
 			productReference = 9A62EE312B9C27E300C834F0 /* WebRTC-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +208,10 @@
 				Base,
 			);
 			mainGroup = 9A62EE282B9C27E300C834F0;
+			packageReferences = (
+				9A62EE6A2B9C956B00C834F0 /* XCRemoteSwiftPackageReference "WebRTC" */,
+				9A62EE6D2B9C958F00C834F0 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = 9A62EE322B9C27E300C834F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A62EE682B9C8E1600C834F0 /* WebSocketProvider.swift in Sources */,
 				9A62EE4C2B9C4C7B00C834F0 /* MainViewModel.swift in Sources */,
 				9A62EE492B9C3F9E00C834F0 /* VideoView.swift in Sources */,
 				9A62EE512B9C5C8F00C834F0 /* Header.swift in Sources */,
@@ -194,9 +246,15 @@
 				9A62EE552B9C5D0800C834F0 /* StatusRowType.swift in Sources */,
 				9A62EE532B9C5CBC00C834F0 /* StatusRowView.swift in Sources */,
 				9A62EE352B9C27E300C834F0 /* WebRTC_iOSApp.swift in Sources */,
+				9A62EE652B9C8D5400C834F0 /* SignalingClient.swift in Sources */,
 				9A62EE5C2B9C5EC500C834F0 /* CustomButton.swift in Sources */,
+				9A62EE742B9C9A3000C834F0 /* SessionDescription.swift in Sources */,
+				9A62EE762B9C9E3400C834F0 /* IceCandidate.swift in Sources */,
+				9A62EE792B9D8E6F00C834F0 /* RTCStatus.swift in Sources */,
 				9A62EE5A2B9C5DDB00C834F0 /* WebRTCStatusView.swift in Sources */,
+				9A62EE632B9C644200C834F0 /* WebRTCClient.swift in Sources */,
 				9A62EE4E2B9C4CFE00C834F0 /* Config.swift in Sources */,
+				9A62EE712B9C99AE00C834F0 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +313,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -310,10 +370,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -326,10 +388,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WebRTC-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = H73W2JKN7A;
+				DEVELOPMENT_TEAM = L4YF9N5C6Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WebRTC-iOS/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "このアプリはマイクを使うよ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -340,7 +404,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -350,6 +415,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,10 +430,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WebRTC-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = H73W2JKN7A;
+				DEVELOPMENT_TEAM = L4YF9N5C6Y;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WebRTC-iOS/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "このアプリはマイクを使うよ";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -378,7 +446,8 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -388,6 +457,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,6 +485,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A62EE6A2B9C956B00C834F0 /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				branch = latest;
+				kind = branch;
+			};
+		};
+		9A62EE6D2B9C958F00C834F0 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A62EE6B2B9C956B00C834F0 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A62EE6A2B9C956B00C834F0 /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		9A62EE6E2B9C958F00C834F0 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A62EE6D2B9C958F00C834F0 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A62EE292B9C27E300C834F0 /* Project object */;
 }
