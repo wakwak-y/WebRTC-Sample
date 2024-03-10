@@ -65,9 +65,9 @@ func (s *WebSocketServer) handleWebSocket(w http.ResponseWriter, r *http.Request
 		}
 
 		//　For debugging
-		log.Printf("Received message from client: %s\n", msg)
-		confirmationMessage := []byte(fmt.Sprintf("Server received your message: %s", msg))
-		conn.WriteMessage(websocket.BinaryMessage, confirmationMessage)
+		//log.Printf("Received message from client: %s\n", msg)
+		//confirmationMessage := []byte(fmt.Sprintf("Server received your message: %s", msg))
+		//conn.WriteMessage(websocket.BinaryMessage, confirmationMessage)
 
 		s.broadcast(msg, conn)
 	}
