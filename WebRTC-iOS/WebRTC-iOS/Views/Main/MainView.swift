@@ -25,19 +25,26 @@ struct MainView: View {
                 WebRTCStatusView(viewModel: viewModel)
                 Spacer()
                 
-                CustomButton(
-                    style: .blueBackground,
-                    label: "Send Offer",
-                    action: { viewModel.handleButtonTap(action: .offer) }
-                )
-                .padding(.top)
+                if viewModel.isAudioSettionActive {
+                    TimerView(currentTime: $viewModel.currentTime)
+                    Spacer()
+                }
                 
-                CustomButton(
-                    style: .blueBackground,
-                    label: "Send Answer",
-                    action: { viewModel.handleButtonTap(action: .answer) }
-                )
-                .padding(.top)
+                if !viewModel.hasLocalSdp && !viewModel.hasRemoteSdp{
+                    CustomButton(
+                        style: .greenBackBround,
+                        label: "🤙Offer",
+                        action: { viewModel.handleButtonTap(action: .offer) }
+                    )
+                    .padding(.top)
+                } else if !viewModel.hasLocalSdp && viewModel.hasRemoteSdp {
+                    CustomButton(
+                        style: .greenBackBround,
+                        label: "Answer👍",
+                        action: { viewModel.handleButtonTap(action: .answer) }
+                    )
+                    .padding(.top)
+                }
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 10)

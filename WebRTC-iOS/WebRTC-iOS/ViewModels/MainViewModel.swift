@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Foundation
+import Combine
 import WebRTC
 
 enum ActionType {
@@ -25,9 +26,12 @@ class MainViewModel: ObservableObject {
     @Published var webRTCStatusLabel: String = "New"
     @Published var webRTCStatusTextColor: Color = .black
     @Published var remoteCandidateCount = 0
+    @Published var isAudioSettionActive: Bool = false
+    @Published var currentTime: TimeInterval = 0
     
     private let signalClient: SignalingClient
     private let webRTCClient: WebRTCClient
+    private var timer: AnyCancellable?
     
     init() {
         let wsProvider = WebSocketProvider(url: Config.default.signalingServerUrl)
@@ -71,6 +75,14 @@ class MainViewModel: ObservableObject {
                 self.signalClient.send(sdp: localSdp)
             }
         }
+    }
+    
+    private func startTimer() {
+        timer = Timer.publish(every: 1, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                self?.currentTime += 1
+            }
     }
 }
 
@@ -132,13 +144,21 @@ extension MainViewModel: WebRTCClientDelegate {
     func webRTCClient(_ client: WebRTCClient, didChangeConnectionState state: RTCIceConnectionState) {
         Task { @MainActor in
             let textColor: Color
+            
             switch state {
             case .connected, .completed:
                 textColor = .green
+                currentTime = 0
+                isAudioSettionActive = true
+                startTimer()
             case .disconnected:
                 textColor = .orange
+                currentTime = 0
+                isAudioSettionActive = false
             case .failed, .closed:
                 textColor = .red
+                currentTime = 0
+                isAudioSettionActive = false
             case .new, .checking, .count:
                 textColor = .black
             @unknown default:

@@ -12,7 +12,7 @@ import SwiftUI
 struct CustomButton: View {
     enum ButtonStyle {
         case textOnly
-        case blueBackground
+        case greenBackBround
     }
     
     let style: ButtonStyle
@@ -26,13 +26,15 @@ struct CustomButton: View {
                 Text(label)
                     .foregroundColor(.blue)
             }
-        case .blueBackground:
+        case .greenBackBround:
             Button(action: action) {
                 Text(label)
                     .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .font(.title)
+                    .bold()
+                    .frame(maxWidth: .infinity, maxHeight: 70)
                     .cornerRadius(10)
-                    .background(Color.blue)
+                    .background(Color.green)
             }
         }
     }

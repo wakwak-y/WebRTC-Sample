@@ -28,6 +28,7 @@
 		9A62EE742B9C9A3000C834F0 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE732B9C9A3000C834F0 /* SessionDescription.swift */; };
 		9A62EE762B9C9E3400C834F0 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE752B9C9E3400C834F0 /* IceCandidate.swift */; };
 		9A62EE792B9D8E6F00C834F0 /* RTCStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE782B9D8E6E00C834F0 /* RTCStatus.swift */; };
+		9A62EE7B2B9E1E7900C834F0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62EE7A2B9E1E7900C834F0 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		9A62EE752B9C9E3400C834F0 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 		9A62EE772B9D82DA00C834F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9A62EE782B9D8E6E00C834F0 /* RTCStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStatus.swift; sourceTree = "<group>"; };
+		9A62EE7A2B9E1E7900C834F0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				9A62EE522B9C5CBC00C834F0 /* StatusRowView.swift */,
 				9A62EE502B9C5C8F00C834F0 /* Header.swift */,
 				9A62EE442B9C2A6000C834F0 /* MainView.swift */,
+				9A62EE7A2B9E1E7900C834F0 /* TimerView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A62EE7B2B9E1E7900C834F0 /* TimerView.swift in Sources */,
 				9A62EE682B9C8E1600C834F0 /* WebSocketProvider.swift in Sources */,
 				9A62EE4C2B9C4C7B00C834F0 /* MainViewModel.swift in Sources */,
 				9A62EE492B9C3F9E00C834F0 /* VideoView.swift in Sources */,
