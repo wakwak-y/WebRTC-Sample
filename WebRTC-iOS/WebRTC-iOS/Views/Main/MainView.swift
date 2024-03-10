@@ -25,34 +25,6 @@ struct MainView: View {
                 WebRTCStatusView(viewModel: viewModel)
                 Spacer()
                 
-                HStack {
-                    CustomButton(
-                        style: .textOnly,
-                        label: "Mute",
-                        action: { viewModel.handleButtonTap(action: .mute) }
-                    )
-                    Spacer()
-                    CustomButton(
-                        style: .textOnly,
-                        label: "Send data",
-                        action: { viewModel.handleButtonTap(action: .sendData) }
-                    )
-                }
-                .padding(.top)
-                
-                HStack {
-                    CustomButton(
-                        style: .textOnly,
-                        label: "Speaker",
-                        action: { viewModel.handleButtonTap(action: .speaker) }
-                    )
-                    Spacer()
-                    NavigationLink(destination: VideoView()) {
-                        Text("Video").foregroundColor(.blue)
-                    }
-                }
-                .padding(.top)
-                
                 CustomButton(
                     style: .blueBackground,
                     label: "Send Offer",

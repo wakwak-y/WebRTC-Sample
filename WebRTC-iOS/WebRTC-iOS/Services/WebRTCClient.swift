@@ -87,6 +87,7 @@ final class WebRTCClient: NSObject {
         do {
             try rtcAudioSession.setCategory(.playAndRecord)
             try rtcAudioSession.setMode(.voiceChat)
+            try rtcAudioSession.overrideOutputAudioPort(.speaker)
         } catch {
             debugPrint("Error changeing AVAudioSession category: \(error)")
         }
